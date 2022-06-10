@@ -1,0 +1,16 @@
+<div class="content-container">
+  <div class="content-area">
+    <section class="workspaces-panel">
+      <p>Workspaces let you collaborate with team members, add permissions and share sources across your whole team.</p>
+
+      <div *ngFor="let item of listedWSs">
+        <a [routerLink]="['/applications', item.id]" class="card clickable">
+          <div class="card-block">
+            <p class="card-text">{{item.wsTitle}}</p>
+          </div>
+        </a>  
+      </div>
+
+    </section>
+  </div>
+</div>

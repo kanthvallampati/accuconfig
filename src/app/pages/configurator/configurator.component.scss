@@ -1,0 +1,66 @@
+.workboard{
+  position: relative;
+  display: block;
+  padding: 0 1rem 1rem 1rem;
+}
+.board-header{
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 1rem 0;
+  border-bottom: 1px solid #CCCCCC;
+  .delimiter{
+    margin: 0 0.6rem;
+  }
+}
+.context{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+.work-panel{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 150px);
+  &.first, &.second{
+    width: 25%;
+    padding: 0.6rem;
+    border-right: 1px solid #CCCCCC;
+  }
+  &.third{
+    width: 50%;
+  }
+  .menu{
+    margin-top: 0.5rem;
+    li {
+      list-style: none;
+      height: 1.8rem;
+      line-height: 1.8rem;
+      border-left: 3px solid #FAFAFA;
+      padding-left: 0.5rem;
+      &:hover{
+        background-color: #E3F4FC;
+        cursor: pointer;
+      }
+      &.selected {
+        background-color: #E3F4FC;
+        border-left: 3px solid #159BD3;
+      }
+    }
+  }
+}
+.config-display{
+  background-color: #101724;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0.6rem;
+  pre {
+    margin: 0;
+    border: none;
+    overflow: scroll;
+  }
+}

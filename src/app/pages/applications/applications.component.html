@@ -1,0 +1,17 @@
+<div class="content-container">
+  <div class="content-area">
+    <section class="applications-panel">
+      <div class="clr-row">
+        
+        <div class="clr-col-4 clr-col-xs-12" *ngFor="let item of listedApps">
+          <a [routerLink]="['/configurator', item.id]" class="card clickable">
+            <div class="card-block">
+              <p class="card-text">{{item.appTitle}}</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+  </div>
+</div>
