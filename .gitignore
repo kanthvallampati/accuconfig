@@ -42,3 +42,6 @@ Thumbs.db
 
 # SonarQube Folder
 /.scannerwork
+
+# cache
+/.angular
