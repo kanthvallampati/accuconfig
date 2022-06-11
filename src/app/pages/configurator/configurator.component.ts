@@ -29,15 +29,9 @@ export class ConfiguratorComponent implements OnInit, OnDestroy{
   getEnvs(target: any) {
     console.log('Selected app - ', target);
     this.listedEnvs = [
-      {'id': '59e2241a-e7c3-11ec-8fea-0242ac120002', 'env':'dev12'},
-      {'id': '62953bb0-e7c3-11ec-8fea-0242ac120002', 'env':'test11'},
-      {'id': '67be47c6-e7c3-11ec-8fea-0242ac120002', 'env':'test15'},
-      {'id': '6d12ad34-e7c3-11ec-8fea-0242ac120002', 'env':'uat1'},
-      {'id': '726c6fa4-e7c3-11ec-8fea-0242ac120002', 'env':'uat2'},
-      {'id': '7844a5ae-e7c3-11ec-8fea-0242ac120002', 'env':'test35'},
-      {'id': '7d7a706c-e7c3-11ec-8fea-0242ac120002', 'env':'lt'},
-      {'id': '838cf812-e7c3-11ec-8fea-0242ac120002', 'env':'cstg'},
-      {'id': '88f517d0-e7c3-11ec-8fea-0242ac120002', 'env':'prod'}
+      {'id': '59e2241a-e7c3-11ec-8fea-0242ac120002', 'env':'dev'},
+      {'id': '838cf812-e7c3-11ec-8fea-0242ac120002', 'env':'staging'},
+      {'id': '88f517d0-e7c3-11ec-8fea-0242ac120002', 'env':'production'}
     ];
   }
 
